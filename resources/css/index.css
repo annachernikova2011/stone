@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'TT Hoves Pro Regular';
+  src: url(/resources/fonts/TT\ Hoves\ Pro\ Trial\ Light.ttf);
+}
+
+@font-face {
+  font-family: 'TT Hoves Pro Medium';
+  src: url(/resources/fonts/TT\ Hoves\ Pro\ Trial\ Medium.ttf);
+}
+
+@media all and (min-width:321px)
+  and (max-width: 480px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container__swiper img {
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+  }
+
+  .container__content {
+    padding: 7vw;
+  }
+
+  .container__content--header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vh;
+  }
+
+  .container__content--title {
+    display: flex;
+    gap: 0.6vh;
+  }
+
+  .container__content--title span {
+    font-size: 1.8vh;
+    color: #6439DF;
+    font-family: 'TT Hoves Pro Regular';
+  }
+
+  .container__content--header > span {
+    font-size: 24px;
+    color: #141416;
+    font-family: 'TT Hoves Pro Regular';
+  }
+
+  .container__content--header p {
+    font-size: 1.8vh;
+    color: #777E90;
+    font-family: 'TT Hoves Pro Regular';
+  }
+
+  .container__content--tab {
+    display: flex;
+    gap: 0.6vh;
+    margin-top: 2.4vh;
+  }
+
+  .container__content--tab span {
+   color: #353945;
+   font-size: 1.8vh;
+   font-family: 'TT Hoves Pro Medium';
+   border: 1px solid #E6E8EC;
+   border-radius: 130px;
+   padding: 12px 24px 12px 24px;
+  }
+
+  .container__content--list {
+    margin-top: 2.4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4vh;
+  }
+
+  .container__content--list div {
+    display: flex;
+    font-family: 'TT Hoves Pro Regular';
+    font-size: 1.8vh;
+    color: #353945;
+  }
+
+  .container__content--list p {
+    margin-left: 3.3vh;
+  }
+
+  .container__footer {
+    display: flex;
+    padding-top: 2.4vh;
+    border-top: 1px solid #E6E8EC;
+    margin-top: 2.4vh;
+    gap: 1.2vh;
+    font-size: 1.8vh;
+  }
+
+  .container__footer--location {
+    font-family: 'TT Hoves Pro Medium';
+    color: #353945;
+  }
+
+  .container__footer--time {
+    font-family: 'TT Hoves Pro Regular';
+    color: #777E90;
+  }
+  
+}
