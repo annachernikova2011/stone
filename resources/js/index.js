@@ -1,5 +1,17 @@
 const swiperEl = document.querySelector('swiper-container');
 
+const imageSources = Array(15).fill('/resources/img/stone.svg');
+
+imageSources.forEach(src => {
+  const swiperSlide = document.createElement('swiper-slide');
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = "Image";
+  
+  swiperSlide.appendChild(img);
+  swiperEl.appendChild(swiperSlide);
+});
+
 const params = {
    injectStyles: [`
    .swiper-pagination-current,
